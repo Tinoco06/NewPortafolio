@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@primary-background-color: #f0f8ff;
+@secondary-background-color: #10507a;
+@primary-text-color: #000000;
+@secondary-text-color: #ffff;
+
+
+@breakResolutions: {
+    tablet: 720px;
+    desktop: 1025px;
+    widescreen: 1300px;
+    ultrawide: 2000px;
+};
+
+@import 'header.less';
+@import 'hero.less';
+@import 'footer.less';
+@import 'form.less';
+@import 'secciones.less';
+
+.defaultTitle{
+    display: block; 
+    background-color: @secondary-background-color;
+    color: @secondary-text-color; 
+    padding: 0 30px;
+    text-align: center;
+    border-radius: 10px;
+};
+
+* {
+    box-sizing: border-box;
+    font-family: "Inria Sans", Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-size: 100%;
+    font-size: 1rem;
+}
+
+a {
+    font-weight: bold;
+    transition: transform 0.75s ease-in-out;
+}
+
+main {
+    min-height: calc(100vh - 90px);
+}
