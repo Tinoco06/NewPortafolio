@@ -1,13 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Portafolio</title>
+    <script src="js/validacion.js"></script>
+    <link rel="stylesheet" href="less/main.less" />    
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <div>
+        <h1>Portafolio</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-container">
+        <div class="hero-panel-one">
+          <h1>Jorge Mauricio Tinoco Pacheco</h1>
+          <h2>Ingeniería en Ciencias de la Computación</h2>
+          <h3>Universidad Católica de Honduras</h3>
+        </div>
+      
+        <div class="hero-panel-two">
+          <picture>
+            <img src="img/Perfil.png" alt="Jorge Mauricio con un reconocimiento" />
+          </picture>
+        </div>
+      </div>
+      
+
+    <div class="secciones">
+      <div class="seccion-individual" >
+        <h1 id="sobremi" class="defaultTitle">Sobre mí</h1>
+        <p>Soy un Técnico Profesional en Informática, actualmente
+            pasante de la carrera de Ingeniería en Ciencias de la
+            computación (UNICAH). Tengo conocimiento en lenguajes de
+            programación como ser C++, Java y C#, manejo base de datos
+            SQL y tengo un sobresaliente desempeño en el manejo de herramientas
+            del paquete de Microsoft Office. Además poseo conocimiento en redes,
+            programación web básica que incluye el manejo de HTML, CSS y Javascript.
+        </p>
+      </div>
+      <div class="seccion-individual">
+        <h1 id="educacion" class="defaultTitle">Educación</h1>
+        <ul>
+            <li>Ingeniería en Ciencias de la Computación | Actual (UNICAH)</li>
+            <li>Bachillerato Técnico Profesional en Informática | 2013-2019 (CEMG "Brígido Bardales")</li>
+            <li>Educación primaria | 2006-2012 (Escuela "Espíritu Santo")</li>
+        </ul>
+      </div>
+      <div class="seccion-individual">
+        <h1 id="contacto" class="defaultTitle">Contacto</h1>
+        <form id="formulario" method="GET">
+        <section>                   
+            <label for="nombre">Nombre</label>
+            <input type="text" name="text" id="nombre" placeholder="Ingrese su nombre"/>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="phone" id="telefono" placeholder="88797577"/>
+            <label for="pedido">Mensaje</label>
+            <textarea name="text" id="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button type="submit" id="btnEnviar" name="btnEnviar">Enviar mensaje</button>
+        </section>
+    </form>
+      </div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/Tinoco06" target="_blank">
+            <img src="img/github.png" alt="Logo github" />
+        </a>
+    </footer>
   </body>
 </html>
