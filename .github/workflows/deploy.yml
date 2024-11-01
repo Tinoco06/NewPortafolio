@@ -1,5 +1,4 @@
 name: Despliegue de Pagina en Vite a Github Pages
-
 on:
   push:
     branches: ["main"]
