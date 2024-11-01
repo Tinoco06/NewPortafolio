@@ -2,7 +2,7 @@ name: Despliegue de Pagina en Vite a Github Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: ["master"]  #cambio a master
   workflow_dispatch:
 
 permissions:
