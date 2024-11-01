@@ -20,9 +20,10 @@ export default defineConfig(
         base: "/VitePortafolio/",
         build: {
             rollupOptions: {
-                input: getHtmlEntries()
-            }
-        },
+              input: {
+                main: './index.html'  
+              }
+            }},
         plugins: [
             htmlPurge({})
         ]
