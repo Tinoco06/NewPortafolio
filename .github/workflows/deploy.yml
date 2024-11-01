@@ -2,12 +2,14 @@ name: Despliegue de Pagina en Vite a Github Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
